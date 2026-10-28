@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AutoPrime Motors - Showroom dan E-Commerce Mobil Modern Terpercaya. Integrasi data API resmi DNCC UDINUS. Dapatkan mobil impian dengan garansi 1 tahun dan cicilan ringan.">
+  <title>AutoPrime Motors - Premium Car Showroom & E-Commerce | DNCC UDINUS</title>
+
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css"> 
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <!-- Logo Brand -->
+      <a href="#" class="brand-logo" aria-label="AutoPrime Motors">
+        <div class="brand-emblem">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <div class="brand-name">AUTOPRIME<span>.</span></div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#" class="nav-link active">Beranda</a></li>
+          <li><a href="#katalog-mobil" class="nav-link">Koleksi Mobil</a></li>
+          <li><a href="#layanan" class="nav-link">Layanan</a></li>
+          <li><a href="#simulasi-kredit" class="nav-link">Simulasi Kredit</a></li>
+          <li><a href="#testimoni" class="nav-link">Testimoni</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="btn-icon-nav" id="themeToggleBtn" title="Ganti Mode Tema" aria-label="Tema">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist / Favorit Button -->
+        <button type="button" class="btn-icon-nav" id="btnNavWishlist" title="Lihat Favorit Saya" aria-label="Favorit">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="nav-badge-count" id="navWishlistCount">0</span>
+        </button>
+
+        <!-- Riwayat Booking Button -->
+        <button type="button" class="btn-icon-nav" id="btnNavBookings" title="Riwayat Pengajuan Saya" aria-label="Riwayat Booking">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+        </button>
+
+        <!-- WhatsApp Direct CTA -->
+        <a href="https://wa.me/6281234567890?text=Halo%20AutoPrime,%20saya%20ingin%20tanya%20unit%20mobil" target="_blank" rel="noopener noreferrer" class="btn-nav-cta">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          <span>Hubungi Sales</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button type="button" class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Menu Navigasi">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       API INTEGRATION STATUS STRIP
+       ========================================================================== -->
+  <aside class="api-status-strip" aria-label="Status Integrasi API">
+    <div class="container api-status-inner">
+      <div class="api-status-badge status-loading" id="apiStatusBadge">
+        <span class="api-pulse-dot"></span>
+        <span id="apiStatusText">Menghubungkan ke API DNCC UDINUS...</span>
+      </div>
+      <div class="api-endpoint-label">
+        <span>Endpoint Resmi:</span>
+        <code>https://api-web.dnccudinus.org/api/mobil</code>
+        <button type="button" class="btn-refresh-api" id="btnRefreshApi" title="Muat ulang data dari API">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+          </svg>
+          Segarkan
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section">
+    <div class="hero-glow-blob"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          DNCC Automotive Expo 2026
+        </div>
+
+        <h1 class="hero-title">
+          Kemewahan & Kenyamanan Mobil Impian dalam <span class="gradient-text">Satu Sentuhan</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Showroom resmi terverifikasi dengan data unit mobil real-time. Garansi mesin 1 tahun, 160 titik inspeksi ketat, dan simulasi kredit transparan dengan DP fleksibel.
+        </p>
+
+        <!-- Hero Quick Search -->
+        <div class="hero-search-wrapper">
+          <div class="hero-search-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <input 
+            type="text" 
+            class="hero-search-input" 
+            id="heroSearchInput" 
+            placeholder="Cari mobil impian Anda (contoh: Ioniq 5, Fortuner, Civic RS...)"
+            aria-label="Cari mobil"
+          />
+          <button type="button" class="btn-hero-search" id="heroSearchBtn">
+            Temukan Mobil
+          </button>
+        </div>
+
+        <!-- Quick Category Shortcuts -->
+        <div class="hero-tags">
+          <span class="hero-tags-label">Kategori Populer:</span>
+          <button type="button" class="hero-tag-pill" data-fuel="Listrik">⚡ Mobil Listrik (EV)</button>
+          <button type="button" class="hero-tag-pill" data-fuel="Hybrid">🌿 Ramah Lingkungan (Hybrid)</button>
+          <button type="button" class="hero-tag-pill" data-fuel="Diesel">⛽ SUV Diesel Tangguh</button>
+          <button type="button" class="hero-tag-pill" data-fuel="Bensin">🚗 City Car Bensin</button>
+        </div>
+
+        <!-- Hero Stats Grid -->
+        <div class="hero-stats-grid">
+          <div class="stat-item">
+            <div class="stat-number"><span id="totalCarsCounter">12</span>+</div>
+            <div class="stat-label">Unit Mobil Terverifikasi</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">160<span>✓</span></div>
+            <div class="stat-label">Titik Inspeksi Standar Pabrik</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1<span>Thn</span></div>
+            <div class="stat-label">Garansi Mesin & Transmisi</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">4.9<span>★</span></div>
+            <div class="stat-label">Rating Kepuasan Pelanggan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SHOWROOM CATALOG SECTION
+       ========================================================================== -->
+  <main class="catalog-section" id="katalog-mobil">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pretitle">Katalog Showroom</span>
+        <h2 class="section-title">Pilihan Unit Kendaraan Terbaik</h2>
+        <p class="section-subtitle">
+          Data diambil langsung melalui integrasi API DNCC secara real-time. Gunakan filter untuk menemukan kendaraan sesuai kebutuhan Anda.
+        </p>
+      </div>
+
+      <!-- Catalog Main Toolbar -->
+      <div class="catalog-toolbar">
+        <div class="toolbar-top-row">
+          <!-- Search Box -->
+          <div class="search-box-catalog">
+            <span class="search-icon-left">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input 
+              type="text" 
+              id="searchInput" 
+              placeholder="Cari berdasarkan nama mobil, merk, atau transmisi..."
+              aria-label="Pencarian mobil"
+            />
+            <button type="button" class="search-clear-btn" id="searchClearBtn" aria-label="Hapus teks pencarian">&times;</button>
+          </div>
+
+          <!-- Controls Kanan (Sort & View Mode) -->
+          <div class="toolbar-controls-right">
+            <div class="sort-wrapper">
+              <label for="sortSelect" class="sort-label">Urutkan:</label>
+              <select id="sortSelect" class="custom-select">
+                <option value="default">Terbaru Ditambahkan</option>
+                <option value="price_asc">Harga: Termurah ke Termahal</option>
+                <option value="price_desc">Harga: Termahal ke Termurah</option>
+                <option value="year_desc">Tahun: Paling Baru</option>
+                <option value="name_asc">Nama: A ke Z</option>
+                <option value="name_desc">Nama: Z ke A</option>
+              </select>
+            </div>
+
+            <!-- View Mode Switcher -->
+            <div class="view-mode-toggle" title="Mode Tampilan"> 
+              <button type="button" class="btn-view-mode active" id="viewGridBtn" aria-label="Tampilan Grid">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="3" width="7" height="7"></rect>
+                  <rect x="14" y="14" width="7" height="7"></rect>
+                  <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+              </button>
+              <button type="button" class="btn-view-mode" id="viewListBtn" aria-label="Tampilan List">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="8" y1="6" x2="21" y2="6"></line>
+                  <line x1="8" y1="12" x2="21" y2="12"></line>
+                  <line x1="8" y1="18" x2="21" y2="18"></line>
+                  <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                  <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                  <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Brand Filter Pills Carousel -->
+        <div class="brand-pills-bar" id="brandPillsContainer" aria-label="Filter berdasarkan Brand">
+          <!-- Diisi dinamis oleh JavaScript -->
+        </div>
+
+        <!-- Active Filter Chips -->
+        <div class="active-filters-wrap" id="activeFilters" style="display: none;">
+          <!-- Diisi dinamis oleh JavaScript -->
+        </div>
+      </div>
+
+      <!-- Main Layout: Sidebar Filters + Cards Grid -->
+      <div class="catalog-content-layout">
+        <!-- Sidebar Filters -->
+        <aside class="catalog-sidebar">
+          <div class="sidebar-header">
+            <h3 class="sidebar-title">Filter Mobil</h3>
+            <button type="button" class="btn-reset-text" id="btnResetFilters">Reset Filter</button>
+          </div>
+
+          <!-- Filter Brand -->
+          <div class="filter-group">
+            <label for="filterBrand" class="filter-label">Brand / Merk</label>
+            <select id="filterBrand" class="custom-select">
+              <option value="all">Semua Brand</option>
+            </select>
+          </div>
+
+          <!-- Filter Bahan Bakar -->
+          <div class="filter-group">
+            <label for="filterFuel" class="filter-label">Jenis Bahan Bakar</label>
+            <select id="filterFuel" class="custom-select">
+              <option value="all">Semua Bahan Bakar</option>
+              <option value="Bensin">Bensin</option>
+              <option value="Diesel">Diesel</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="Listrik">Listrik (EV)</option>
+            </select>
+          </div>
+
+          <!-- Filter Transmisi -->
+          <div class="filter-group">
+            <label for="filterTrans" class="filter-label">Tipe Transmisi</label>
+            <select id="filterTrans" class="custom-select">
+              <option value="all">Semua Transmisi</option>
+              <option value="Matic">Matic (AT)</option>
+              <option value="CVT">CVT</option>
+              <option value="Manual">Manual (MT)</option>
+            </select>
+          </div>
+
+          <!-- Filter Status Ketersediaan -->
+          <div class="filter-group">
+            <label for="filterStatus" class="filter-label">Status Unit</label>
+            <select id="filterStatus" class="custom-select">
+              <option value="all">Semua Status</option>
+              <option value="tersedia">Tersedia di Showroom</option>
+              <option value="sold">Sudah Terjual (Sold)</option>
+            </select>
+          </div>
+
+          <!-- Filter Rentang Harga Maksimal -->
+          <div class="filter-group">
+            <label class="filter-label">Harga Maksimal OTR</label>
+            <div class="price-range-wrap">
+              <input 
+                type="range" 
+                id="filterPriceRange" 
+                class="price-range-slider" 
+                min="200000000" 
+                max="1000000000" 
+                step="25000000" 
+                value="1000000000"
+              />
+              <div class="price-range-output">
+                <span>Hingga:</span>
+                <strong id="filterPriceDisplay">Rp 1.000.000.000</strong>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Main Display: Counter + Cars Grid -->
+        <section class="catalog-display-area">
+          <div class="results-info-bar">
+            <div>
+              Menampilkan <strong id="resultsCounter">0</strong> unit mobil
+            </div>
+            <div class="results-hint">
+              *Harga OTR dapat berubah sewaktu-waktu sesuai promo dealer
+            </div>
+          </div>
+
+          <!-- Dynamic Cards Grid (Diisi via JavaScript DOM Manipulation) -->
+          <div class="cars-grid" id="carsGrid">
+            <!-- Skeleton diisi saat loading, lalu diganti dengan car cards -->
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- ==========================================================================
+       LAYANAN & KEUNGGULAN SHOWROOM
+       ========================================================================== -->
+  <section class="services-section" id="layanan">
+    <div class="container">
+      <div class="section-header" style="text-align: center; max-width: 650px; margin: 0 auto 3rem;">
+        <span class="section-pretitle">Keunggulan Layanan</span>
+        <h2 class="section-title">Mengapa Memilih AutoPrime Motors?</h2>
+        <p class="section-subtitle">
+          Standar inspeksi tinggi dan transparansi penuh untuk memastikan setiap perjalanan Anda aman dan nyaman.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">160 Titik Inspeksi</h3>
+          <p class="service-desc">Pengecekan mendalam meliputi mesin, rangka sasis, kelistrikan, transmisi hingga sistem pengereman berstandar profesional.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+          </div>
+          <h3 class="service-title">Garansi Mesin 1 Tahun</h3>
+          <p class="service-desc">Perlindungan garansi resmi untuk mesin dan transmisi. Bebas rasa cemas dengan layanan darurat bengkel rekanan se-Indonesia.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <h3 class="service-title">Jaminan Uang Kembali 5 Hari</h3>
+          <p class="service-desc">Jika terbukti mobil pernah mengalami kecelakaan berat atau terendam banjir, kami memberikan jaminan 100% refund uang kembali.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-box">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <h3 class="service-title">Home Test Drive Gratis</h3>
+          <p class="service-desc">Sibuk bekerja? Tim sales profesional kami siap membawakan unit mobil pilihan langsung ke rumah atau kantor Anda secara gratis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SIMULASI KREDIT (CALCULATOR)
+       ========================================================================== -->
+  <section class="calculator-section" id="simulasi-kredit">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pretitle">Kalkulator Finansial</span>
+        <h2 class="section-title">Simulasi Kredit & Angsuran Mobil</h2>
+        <p class="section-subtitle">
+          Hitung estimasi Down Payment (DP) dan cicilan bulanan sesuai kemampuan anggaran Anda secara instan dan transparan.
+        </p>
+      </div>
+
+      <div class="calc-wrapper-card">
+        <!-- Input Parameters -->
+        <div class="calc-inputs-col">
+          <!-- Pilih Unit Mobil -->
+          <div class="calc-field-group">
+            <label for="calcCarSelect" class="filter-label">Pilih Mobil yang Disimulasikan</label>
+            <select id="calcCarSelect" class="custom-select">
+              <!-- Diisi otomatis dari daftar mobil -->
+            </select>
+          </div>
+
+          <!-- Harga Mobil (Readonly / Auto Format) -->
+          <div class="calc-field-group">
+            <label for="calcCarPriceInput" class="filter-label">Harga OTR Mobil</label>
+            <input type="text" id="calcCarPriceInput" class="custom-select" readonly style="font-weight: 700; color: var(--primary);">
+          </div>
+
+          <!-- Slider DP -->
+          <div class="calc-field-group">
+            <div class="calc-label-row">
+              <label for="calcDpSlider">Uang Muka (Down Payment):</label>
+              <span class="calc-badge-val" id="calcDpPercentDisplay">20%</span>
+            </div>
+            <input type="range" id="calcDpSlider" class="price-range-slider" min="10" max="70" step="5" value="20">
+            <div class="price-range-output">
+              <span>Nominal DP Estimasi:</span>
+              <strong id="calcDpNominalDisplay">Rp 0</strong>
+            </div>
+          </div>
+
+          <!-- Tenor Pills -->
+          <div class="calc-field-group">
+            <label class="filter-label">Lama Tenor Pinjaman</label>
+            <div class="tenor-pills-wrap">
+              <button type="button" class="tenor-pill" data-tenor="1">1 Tahun</button>
+              <button type="button" class="tenor-pill" data-tenor="2">2 Tahun</button>
+              <button type="button" class="tenor-pill active" data-tenor="3">3 Tahun</button>
+              <button type="button" class="tenor-pill" data-tenor="4">4 Tahun</button>
+              <button type="button" class="tenor-pill" data-tenor="5">5 Tahun</button>
+            </div>
+          </div>
+
+          <!-- Suku Bunga -->
+          <div class="calc-field-group">
+            <div class="calc-label-row">
+              <label for="calcInterestInput">Suku Bunga Flat per Tahun (%):</label>
+            </div>
+            <input type="number" id="calcInterestInput" class="custom-select" min="2" max="15" step="0.1" value="5.0">
+          </div>
+        </div>
+
+        <!-- Result Box -->
+        <div class="calc-result-box">
+          <div class="calc-main-highlight">
+            <span class="calc-inst-label">Estimasi Angsuran per Bulan</span>
+            <div class="calc-inst-big" id="calcResultAngsuran">Rp 0</div>
+            <span class="calc-inst-period">*Belum termasuk promo cashback diskon DP dealer</span>
+          </div>
+
+          <div class="calc-breakdown-list">
+            <div class="breakdown-row">
+              <span class="breakdown-label">Pokok Pinjaman (Leasing)</span>
+              <span class="breakdown-val" id="calcResultPokok">Rp 0</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-label">Total Beban Bunga</span>
+              <span class="breakdown-val" id="calcResultTotalBunga">Rp 0</span>
+            </div>
+            <div class="breakdown-row">
+              <span class="breakdown-label">Estimasi Total Bayar Pertama (TDP)</span>
+              <span class="breakdown-val" id="calcResultTdp" style="color: var(--accent-emerald);">Rp 0</span>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary" id="btnApplyCredit" style="width: 100%;">
+            Ajukan Pembiayaan / Konsultasi
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TESTIMONIALS SECTION
+       ========================================================================== -->
+  <section class="testimonials-section" id="testimoni">
+    <div class="container">
+      <div class="section-header" style="text-align: center; max-width: 650px; margin: 0 auto 3rem;">
+        <span class="section-pretitle">Kisah Kepuasan</span>
+        <h2 class="section-title">Apa Kata Konsumen Kami?</h2>
+        <p class="section-subtitle">
+          Pengalaman nyata pembeli mobil impian mereka melalui sistem AutoPrime Motors.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-stars">
+            ★★★★★
+          </div>
+          <p class="testi-quote">
+            "Pelayanan AutoPrime sangat profesional! Saya beli Hyundai Ioniq 5, proses verifikasi data dan pengajuan pembiayaannya hanya 2 hari langsung serah terima unit di rumah."
+          </p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80" alt="Budi Santoso" class="author-avatar" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\' viewBox=\'0 0 24 24\' fill=\'%2364748b\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 20c0-4 4-6 8-6s8 2 8 6\'/></svg>';">
+            <div>
+              <h4 class="author-name">Budi Santoso</h4>
+              <span class="author-unit">Pembeli Hyundai Ioniq 5 Long Range</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">
+            ★★★★★
+          </div>
+          <p class="testi-quote">
+            "Sangat puas dengan fitur perbandingan dan simulasi kreditnya yang akurat. Unit Toyota Fortuner GR Sport yang saya terima kondisinya mulus seperti baru keluar dari dealer resmi!"
+          </p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="dr. Hendra Kusuma" class="author-avatar" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\' viewBox=\'0 0 24 24\' fill=\'%2364748b\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 20c0-4 4-6 8-6s8 2 8 6\'/></svg>';">
+            <div>
+              <h4 class="author-name">dr. Hendra Kusuma</h4>
+              <span class="author-unit">Pembeli Toyota Fortuner 2.8 GR Sport</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testi-stars">
+            ★★★★★
+          </div>
+          <p class="testi-quote">
+            "Fitur Home Test Drive sangat membantu. Sales membawakan Honda Civic RS ke kantor saya untuk dicoba sebelum saya memutuskan bayar tanda jadi. Sangat direkomendasikan!"
+          </p>
+          <div class="testi-author">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&q=80" alt="Sarah Amalia" class="author-avatar" onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'48\' height=\'48\' viewBox=\'0 0 24 24\' fill=\'%2364748b\'><circle cx=\'12\' cy=\'8\' r=\'4\'/><path d=\'M4 20c0-4 4-6 8-6s8 2 8 6\'/></svg>';">
+            <div>
+              <h4 class="author-name">Sarah Amalia</h4>
+              <span class="author-unit">Pembeli Honda Civic RS Turbo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FAQ ACCORDION SECTION
+       ========================================================================== -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header" style="text-align: center; max-width: 650px; margin: 0 auto 3rem;">
+        <span class="section-pretitle">Pertanyaan Umum</span>
+        <h2 class="section-title">Kerap Ditanyakan (FAQ)</h2>
+        <p class="section-subtitle">
+          Informasi seputar proses pemesanan, verifikasi unit, pengiriman, dan garansi mobil.
+        </p>
+      </div>
+
+      <div class="faq-accordion">
+        <div class="faq-item active">
+          <div class="faq-item-header">
+            <h4>Bagaimana cara kerja integrasi data mobil pada website ini?</h4>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-item-content">
+            Website AutoPrime Motors terhubung secara langsung menggunakan fungsi <code>fetch()</code> ke endpoint API resmi DNCC UDINUS (<code>https://api-web.dnccudinus.org/api/mobil</code>). Setiap kali Anda memfilter atau mencari, sistem memproses data secara dinamis menggunakan Vanilla JavaScript DOM Manipulation tanpa refresh halaman.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item-header">
+            <h4>Apakah mobil yang dijual memiliki garansi resmi?</h4>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-item-content">
+            Ya, setiap unit mobil yang terdaftar di AutoPrime Motors mendapatkan sertifikat garansi resmi 1 tahun untuk komponen mesin dan transmisi, serta jaminan buyback 5 hari uang kembali 100% apabila ditemukan riwayat banjir atau tabrakan sasis besar.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item-header">
+            <h4>Bagaimana prosedur pengajuan Test Drive?</h4>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-item-content">
+            Anda cukup memilih mobil pada katalog lalu klik tombol "Test Drive / Beli". Isi formulir dengan nama, nomor WhatsApp, serta tanggal dan sesi waktu yang Anda inginkan (Bisa datang langsung ke showroom atau Home Test Drive diantar ke tempat Anda).
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-item-header">
+            <h4>Apakah melayani tukar tambah (Trade-In)?</h4>
+            <span class="faq-chevron">▼</span>
+          </div>
+          <div class="faq-item-content">
+            Kami menerima tukar tambah segala merk mobil dengan penawaran harga appraisal yang transparan dan kompetitif. Nilai mobil lama Anda dapat langsung dialokasikan sebagai Down Payment (DP) unit baru.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       KONTAK & FORM SHOWROOM
+       ========================================================================== -->
+  <section class="contact-section" id="kontak">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <span class="section-pretitle">Kunjungi Showroom Kami</span>
+          <h2 class="section-title">Konsultasikan Mobil Impian Anda Bersama Tim Kami</h2>
+          <p class="section-subtitle">
+            Showroom modern kami siap melayani Anda setiap hari. Nikmati kenyamanan lounge VIP, konsultasi pembiayaan, serta uji kemudi unit impian.
+          </p>
+
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div>
+                <strong>Lokasi Showroom</strong>
+                <p style="color: var(--text-sub); font-size: 0.9rem;">Jl. Imam Bonjol No. 207, Pendrikan Kidul, Semarang Tengah, Kota Semarang, Jawa Tengah 50131 (Dekat Kampus UDINUS)</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div>
+                <strong>Jam Operasional</strong>
+                <p style="color: var(--text-sub); font-size: 0.9rem;">Senin - Minggu: 08:30 - 20:30 WIB (Buka Setiap Hari)</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-icon-box">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div>
+                <strong>Kontak WhatsApp & Telepon</strong>
+                <p style="color: var(--text-sub); font-size: 0.9rem;">+62 812-3456-7890 (Customer Care 24 Jam)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Kontak Interaktif -->
+        <div class="contact-form-col">
+          <form class="contact-form" id="contactForm">
+            <h3 style="font-family: var(--font-heading); font-size: 1.35rem; margin-bottom: 1.25rem;">Tinggalkan Pesan</h3>
+
+            <div class="form-group">
+              <label for="contactName">Nama Lengkap</label>
+              <input type="text" id="contactName" placeholder="Contoh: Muhammad Rizky" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail">Email atau No. WhatsApp</label>
+              <input type="text" id="contactEmail" placeholder="Contoh: rizky@gmail.com / 08123456789" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contactTopic">Topik Keperluan</label>
+              <select id="contactTopic" class="custom-select">
+                <option value="test-drive">Jadwal Test Drive Khusus</option>
+                <option value="kredit">Konsultasi Simulasi Kredit & DP</option>
+                <option value="trade-in">Tukar Tambah Mobil Lama</option>
+                <option value="info">Informasi Unit Tertentu</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage">Pesan atau Catatan Tambahan</label>
+              <textarea id="contactMessage" rows="4" placeholder="Tuliskan pertanyaan atau mobil yang Anda minati..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Kirim Pesan Sekarang
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <a href="#" class="brand-logo">
+            <div class="brand-emblem">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+            </div>
+            <div class="brand-name">AUTOPRIME<span>.</span></div>
+          </a>
+          <p class="footer-brand-desc">
+            Platform E-Commerce & Showroom Mobil Modern berstandar premium dengan integrasi data API real-time, transparansi harga OTR, dan jaminan kualitas bersertifikat.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigasi</h4>
+          <ul class="footer-links-list">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#katalog-mobil">Koleksi Mobil</a></li>
+            <li><a href="#layanan">Layanan & Garansi</a></li>
+            <li><a href="#simulasi-kredit">Kalkulator Kredit</a></li>
+            <li><a href="#testimoni">Ulasan Konsumen</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Brand Populer</h4>
+          <ul class="footer-links-list">
+            <li><a href="#katalog-mobil">Toyota Indonesia</a></li>
+            <li><a href="#katalog-mobil">Honda Prospect Motor</a></li>
+            <li><a href="#katalog-mobil">BYD Electric Vehicles</a></li>
+            <li><a href="#katalog-mobil">Hyundai Motor</a></li>
+            <li><a href="#katalog-mobil">Mazda & Suzuki</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Teknologi & Sumber</h4>
+          <ul class="footer-links-list">
+            <li><span>HTML5 & CSS3 Native</span></li>
+            <li><span>Vanilla JavaScript (No Framework)</span></li>
+            <li><span>REST API DNCC UDINUS</span></li>
+            <li><span>DOM Manipulation Dynamic</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>AutoPrime Motors</strong>. Tugas Akhir Web Development Frontend - Dian Nuswantoro Computer Club (DNCC) UDINUS.
+        </div>
+        <div style="display: flex; gap: 1rem;">
+          <span>Privasi & Kebijakan</span>
+          <span>•</span>
+          <span>Syarat & Ketentuan</span>
+          <span>•</span>
+          <span>Sitemap</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       FLOATING COMPARISON DRAWER
+       ========================================================================== -->
+  <aside class="compare-drawer" id="compareDrawer" aria-label="Komparasi Mobil">
+    <div style="display: flex; align-items: center; gap: 0.5rem;">
+      <span style="font-weight: 700; font-family: var(--font-heading); font-size: 0.95rem;">
+        Komparasi (<span id="compareCountBadge">0</span>/3)
+      </span>
+    </div>
+
+    <div class="compare-drawer-items">
+      <!-- Diisi dinamis oleh JavaScript -->
+    </div>
+
+    <div style="display: flex; gap: 0.5rem;">
+      <button type="button" class="btn btn-sm btn-primary" id="btnOpenCompareModal">
+        Bandingkan Sekarang
+      </button>
+      <button type="button" class="btn btn-sm btn-outline" id="btnClearAllCompare" title="Kosongkan">
+        Hapus
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       MODAL: DETAIL MOBIL LENGKAP
+       ========================================================================== -->
+  <div class="modal" id="modalDetail" role="dialog" aria-modal="true" aria-labelledby="detailModalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <h3 class="modal-title" id="detailModalTitle">Informasi Lengkap Spesifikasi Unit</h3>
+        <button type="button" class="modal-close" aria-label="Tutup modal">&times;</button>
+      </div>
+      <div class="modal-body modal-content-dynamic">
+        <!-- Konten detail mobil dimasukkan dinamis lewat UI.renderDetailModal(car) -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: PERBANDINGAN MOBIL SIDE-BY-SIDE
+       ========================================================================== -->
+  <div class="modal" id="modalCompare" role="dialog" aria-modal="true" aria-labelledby="compareModalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <h3 class="modal-title" id="compareModalTitle">Komparasi Spesifikasi Mobil Side-by-Side</h3>
+        <button type="button" class="modal-close" aria-label="Tutup modal">&times;</button>
+      </div>
+      <div class="modal-body modal-content-dynamic">
+        <!-- Tabel komparasi dimasukkan dinamis lewat UI.renderCompareModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: WISHLIST / DAFTAR FAVORIT
+       ========================================================================== -->
+  <div class="modal" id="modalWishlist" role="dialog" aria-modal="true" aria-labelledby="wishlistModalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="wishlistModalTitle">Mobil Favorit Tersimpan</h3>
+        <button type="button" class="modal-close" aria-label="Tutup modal">&times;</button>
+      </div>
+      <div class="modal-body modal-content-dynamic">
+        <!-- Daftar wishlist dimasukkan dinamis lewat UI.renderWishlistModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: PENGAJUAN TEST DRIVE & BOOKING SPK
+       ========================================================================== -->
+  <div class="modal" id="modalBooking" role="dialog" aria-modal="true" aria-labelledby="bookingModalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="bookingModalTitle">Jadwalkan Test Drive / Pemesanan SPK</h3>
+        <button type="button" class="modal-close" aria-label="Tutup modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="bookingCarSelect">Unit Mobil yang Dipilih</label>
+            <select id="bookingCarSelect" class="custom-select" required>
+              <!-- Diisi otomatis -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingName">Nama Lengkap Pemesan *</label>
+            <input type="text" id="bookingName" placeholder="Masukkan nama lengkap sesuai KTP" required>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingPhone">Nomor WhatsApp Aktif *</label>
+            <input type="tel" id="bookingPhone" placeholder="Contoh: 081234567890" required>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <div class="form-group">
+              <label for="bookingDate">Tanggal Rencana *</label>
+              <input type="date" id="bookingDate" required>
+            </div>
+            <div class="form-group">
+              <label for="bookingTimeSlot">Sesi Waktu</label>
+              <select id="bookingTimeSlot" class="custom-select">
+                <option value="Pagi (09:00 - 11:30)">Pagi (09:00 - 11:30)</option>
+                <option value="Siang (13:00 - 15:30)">Siang (13:00 - 15:30)</option>
+                <option value="Sore (16:00 - 18:30)">Sore (16:00 - 18:30)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Metode Layanan Test Drive:</label>
+            <div style="display: flex; gap: 1.5rem; margin-top: 0.35rem;">
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; font-size: 0.9rem;">
+                <input type="radio" name="bookingService" value="showroom" checked>
+                <span>Datang ke Showroom</span>
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; font-size: 0.9rem;">
+                <input type="radio" name="bookingService" value="home">
+                <span>Home Test Drive (Diantar)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="bookingNotes">Catatan Tambahan (Opsional)</label>
+            <textarea id="bookingNotes" rows="2" placeholder="Contoh: Ingin simulasi DP 30% atau tukar tambah Avanza lama"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+            Konfirmasi Jadwal Test Drive
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL: RIWAYAT PENGAJUAN SAYA
+       ========================================================================== -->
+  <div class="modal" id="modalBookingsHistory" role="dialog" aria-modal="true" aria-labelledby="historyModalTitle">
+    <div class="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 class="modal-title" id="historyModalTitle">Riwayat Pengajuan Jadwal & SPK</h3>
+        <button type="button" class="modal-close" aria-label="Tutup modal">&times;</button>
+      </div>
+      <div class="modal-body modal-content-dynamic">
+        <!-- Diisi dinamis oleh UI.renderBookingsModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION CONTAINER
+       ========================================================================== -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- ==========================================================================
+       VANILLA JAVASCRIPT SCRIPTS (Strictly Native / No External Frameworks)
+       ========================================================================== -->
+  <script src="js/calculator.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
